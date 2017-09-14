@@ -5,6 +5,12 @@ if [ -z "$2" ]; then
    exit
 fi
 
-for filename in `find . -name "*$1"`
+dir="."
+
+[ -z "$3" ] || dir="$3"
+
+for filename in `find $dir -name "*$1"`
    do grep -H $2 $filename
 done
+
+exit 0
