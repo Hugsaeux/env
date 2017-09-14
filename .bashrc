@@ -11,6 +11,5 @@ fi
 # User specific aliases and functions
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export BASH_ENV="~/.bash_aliases"
 
-alias ff="find . -name"
-alias fl="~/.bashscripts/findline"

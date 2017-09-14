@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.bashrc
+!.bash_aliases
 !.vimrc
 !.tmux.conf
 !*/
