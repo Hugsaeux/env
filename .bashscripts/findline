@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$2" ]; then
+   echo "USAGE: findcode <file extension> <regex>"
+   exit
+fi
+
+for i in `find . -name "*$1"`
+   do grep -H $2 $i
+done
