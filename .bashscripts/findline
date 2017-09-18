@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$2" ]; then
-   echo "USAGE: findcode <file extension> <regex>"
+   echo "USAGE: findline <regex> <file extension>"
    exit
 fi
 
@@ -9,8 +9,8 @@ dir="."
 
 [ -z "$3" ] || dir="$3"
 
-for filename in `find $dir -name "*$1"`
-   do grep -H $2 $filename
+for filename in `find $dir -name "*$2"`
+   do grep -H $1 $filename
 done
 
 exit 0

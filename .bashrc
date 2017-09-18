@@ -13,3 +13,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export BASH_ENV="~/.bash_aliases"
 
+if [ -f ~/.bash_aliases ]
+then
+   . ~/.bash_aliases
+fi
